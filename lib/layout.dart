@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webadminpannel/widgets/large_screen.dart';
 
 class SiteLayout extends StatelessWidget {
   const SiteLayout({Key? key}) : super(key: key);
@@ -10,19 +11,7 @@ class SiteLayout extends StatelessWidget {
         elevation: 0,
         backgroundColor: Colors.white,
       ),
-      body: Row(
-        children: [
-          Expanded(
-              child: Container(
-            color: Colors.red,
-          )),
-          Expanded(
-            flex: 5,
-            child: Container(
-            color: Colors.blue,
-          ))
-        ],
-      ),
+      body: LargeScreen(),
     );
   }
 }
